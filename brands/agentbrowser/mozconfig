@@ -1,0 +1,17 @@
+ac_add_options --with-app-name=AgentBrowser
+ac_add_options --with-app-basename=AgentBrowser
+ac_add_options --enable-official-branding
+ac_add_options --with-branding=browser/branding/agentbrowser
+ac_add_options --enable-update-channel=release
+ac_add_options --enable-unverified-updates
+ac_add_options --disable-crashreporter
+ac_add_options MOZ_TELEMETRY_REPORTING=
+
+export MOZ_APP_PROFILE="Agent Browser"
+export ACCEPTED_MAR_CHANNEL_IDS=firefox-agentbrowser-release
+export MAR_CHANNEL_ID=firefox-agentbrowser-release
+export MOZ_SOURCE_REPO="https://github.com/ghostery/user-agent-desktop"
+export MOZ_SOURCE_CHANGESET=679384f98e92a41cc5db94dec7fb6f3f0dc6f996
+
+# l10n base directory
+ac_add_options --with-l10n-base=/Users/shannoncode/repo/user-agent-desktop/l10n
